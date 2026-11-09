@@ -105,7 +105,8 @@ SUPP <- list(
   "S3f Score by mutation"      = R1("04_bulk_score", "MT_score_by_mutation.csv"),
   "S3g TCGA Cox"               = R1("04_bulk_score", "TCGA_Cox_MT_scores.csv"),
   "S3h External Cox MT_core"   = R1("04_bulk_score", "External_Cox_MT_core.csv"),
-  "S4 Candidate genes"         = R1("05_candidates", "Table_S3_candidates_unicox.csv"),
+  "S4a WGCNA turquoise"        = R1("05_candidates", "WGCNA_module_turquoise_genes.csv"),
+  "S4b Candidate genes"        = R1("05_candidates", "Table_S3_candidates_unicox.csv"),
   "S5a Model combinations"     = R1("06_ml_signature", "Table_S4_Cindex_101_models.csv"),
   "S5b MTRS coefficients"      = R1("09_hub_gene_spatial", "RLRS_coefficients.csv"),
   "S5c MTRS by cohort"         = R1("06_ml_signature", "RLRS_Cox_by_cohort.csv"),
@@ -135,6 +136,15 @@ SUPP <- list(
 )
 
 wb <- openxlsx::createWorkbook()
+ov_sheets <- c("Table 1", names(SUPP), "S10 Package versions")
+ov_df <- data.frame(
+  Worksheet = ov_sheets,
+  Source_File = c("results/10_tables/Table1_cohorts.csv",
+                  vapply(SUPP, function(p) basename(p), character(1)),
+                  "results/10_tables/Table_S10_package_versions.csv"),
+  stringsAsFactors = FALSE
+)
+openxlsx::addWorksheet(wb, "Overview"); openxlsx::writeData(wb, "Overview", ov_df)
 openxlsx::addWorksheet(wb, "Table 1"); openxlsx::writeData(wb, "Table 1", tab1)
 clean_df_labels <- function(df) {
   fix_str <- function(x) {
