@@ -39,5 +39,6 @@
     "single-cell RNA-seq",
     "spatial transcriptomics",
     "machine learning prognostic signature"
-  ]
+  ],
+  "version": "1.0.1"
 }
