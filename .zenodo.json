@@ -1,0 +1,43 @@
+{
+  "title": "Reproducible analysis pipeline for: Integrative Single-Cell, Spatial and Multi-Cohort Transcriptomic Analysis of Plasma Membrane Tension Regulators Reveals Tumour-Stroma Mechanical Crosstalk and Predicts Therapy Response in Clear Cell Renal Cell Carcinoma",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Guo, Xiaoyang",
+      "affiliation": "Department of Urology, Shenzhen Hospital of Integrated Traditional Chinese and Western Medicine",
+      "orcid": "0009-0008-3939-7267"
+    },
+    {
+      "name": "Wu, Mingjie",
+      "affiliation": "Department of Urology, Shenzhen Hospital of Integrated Traditional Chinese and Western Medicine"
+    },
+    {
+      "name": "Sun, Zhiyue",
+      "affiliation": "Department of Urology, Shenzhen Hospital of Integrated Traditional Chinese and Western Medicine",
+      "orcid": "0009-0001-2613-4571"
+    },
+    {
+      "name": "Zeng, Ke",
+      "affiliation": "Department of Urology, Shenzhen Hospital of Integrated Traditional Chinese and Western Medicine",
+      "orcid": "0009-0008-3864-7594"
+    },
+    {
+      "name": "Liao, Zhenghang",
+      "affiliation": "Department of Urology, Shenzhen Hospital of Integrated Traditional Chinese and Western Medicine"
+    },
+    {
+      "name": "Wen, Bo",
+      "affiliation": "Department of Urology, Shenzhen Hospital of Integrated Traditional Chinese and Western Medicine",
+      "orcid": "0009-0009-9563-2089"
+    }
+  ],
+  "keywords": [
+    "clear cell renal cell carcinoma",
+    "plasma membrane tension",
+    "mechanotransduction",
+    "single-cell RNA-seq",
+    "spatial transcriptomics",
+    "machine learning prognostic signature"
+  ]
+}
